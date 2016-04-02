@@ -1,0 +1,61 @@
+// JavaScript Document
+ function change1(t)
+    {
+        var Ntabadetail=document.getElementById("Ntaba-detail");
+        var Ntabbdetail=document.getElementById("Ntabb-detail");
+		var Ntabcdetail=document.getElementById("Ntabc-detail");
+		
+    
+        if(t==0){
+            Ntabadetail.style.display="block";
+            Ntabbdetail.style.display="none";
+			Ntabcdetail.style.display="none";
+        }
+        if(t==1){
+		   Ntabbdetail.style.display="block";
+           Ntabadetail.style.display="none";
+		   Ntabcdetail.style.display="none";
+            
+        }
+		if(t==2){
+            Ntabcdetail.style.display="block";
+            Ntabadetail.style.display="none";
+			Ntabbdetail.style.display="none";
+        }
+    }
+	
+  var curIndex=0;
+  var timeInterval=3000;
+  setInterval(changeImg,timeInterval);
+  var arr=new Array();
+		arr[0]="image/N综合1.jpg";
+		arr[1]="image/N综合2.jpg";
+		arr[2]="image/N综合3.jpg";
+		arr[3]="image/N综合4.jpg";
+ function changeImg()
+  {     
+  	var obj=document.getElementById("Nmulobj");
+		if(curIndex==arr.length-1)
+		{
+			curIndex=0;		
+		}
+		else
+		{
+			curIndex+=1;
+		}
+		obj.src=arr[curIndex];
+  }
+  
+ window.onload=function(){
+	  var Nscrocontainer=document.getElementById("Nscoroll-container");
+	  var Nscrolllist=document.getElementById("Nscroll-list");
+	  var Nscrollbuttons=document.getElementById("Nscroll-buttons").getElementsByTagName("span");
+	  var Nprev=document.getElementById("prev");
+	  var Nnext=document.getElementById("next");
+	  Nnext.onclick=function(){
+		 Nscrolllist.style.left=parseInt(Nscrolllist.style.left)-640+'px' ;
+	  Nprev.onclick=function(){
+		 Nscrolllist.style.left=parseInt(Nscrolllist.style.left)+640+'px' ;  	
+	  }
+	  }
+  }

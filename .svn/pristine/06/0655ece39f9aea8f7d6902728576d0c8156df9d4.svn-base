@@ -1,0 +1,5 @@
+// JavaScript Document
+window.onload=function(){
+var personDeletem=document.getElementsByName('pDelete');
+manageDelete(personDeletem);
+}

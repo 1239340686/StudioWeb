@@ -1,0 +1,42 @@
+package com.bjwz.model;
+
+import java.util.Date;
+
+public class Message {
+	private int MessageId;
+	private Date MessageDate;
+	private String MessageTitle;
+	private String MessageAuthor;
+	private String MessageContent;
+	
+	public String getMessageAuthor() {
+		return MessageAuthor;
+	}
+	public void setMessageAuthor(String messageAuthor) {
+		MessageAuthor = messageAuthor;
+	}
+	public int getMessageId() {
+		return MessageId;
+	}
+	public void setMessageId(int messageId) {
+		MessageId = messageId;
+	}
+	public Date getMessageDate() {
+		return MessageDate;
+	}
+	public void setMessageDate(Date messageDate) {
+		MessageDate = messageDate;
+	}
+	public String getMessageTitle() {
+		return MessageTitle;
+	}
+	public void setMessageTitle(String messageTitle) {
+		MessageTitle = messageTitle;
+	}
+	public String getMessageContent() {
+		return MessageContent;
+	}
+	public void setMessageContent(String messageContent) {
+		MessageContent = messageContent;
+	}
+}

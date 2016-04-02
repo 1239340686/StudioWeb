@@ -1,0 +1,34 @@
+package com.bjwz.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import com.bjwz.dao.NewsDao;
+import com.bjwz.model.News;
+public class NewsAddServlet extends HttpServlet {
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+			request.setCharacterEncoding("gb2312");
+			response.setContentType("text/html");
+			int newsId =Integer.parseInt(request.getParameter("newsId")) ;
+			String newsTitle = request.getParameter("newsTitle");
+			String newsCreator = request.getParameter("newsCreator");
+			String newsCreateTime = request.getParameter("newsCreateTime");
+			News news = new News();
+			news.setNewsId(newsId);
+			news.setNewsTitle(newsTitle);
+			news.setNewsCreator(newsCreator);
+			news.setNewsCreateTime(newsCreateTime);
+			NewsDao.add(news);
+			//实现页面跳转，跳转回NIndex.jsp页面
+			response.sendRedirect("NIndex.jsp");
+	}
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+	}
+
+}

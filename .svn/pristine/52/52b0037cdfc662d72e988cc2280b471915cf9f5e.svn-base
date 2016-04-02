@@ -1,0 +1,45 @@
+package com.bjwz.model;
+
+import java.util.Date;
+
+public class Album {
+	
+	private int PhotoId;
+	private String PhotoDesc;
+	private Date PhotoDate;
+    private String PhotoName;
+    private String PhotoUrl;
+    
+	public String getPhotoUrl() {
+		return PhotoUrl;
+	}
+	public void setPhotoUrl(String photoUrl) {
+		this.PhotoUrl = photoUrl;
+	}
+	public int getPhotoId() {
+		return PhotoId;
+	}
+	public void setPhotoId(int PhotoId) {
+		this.PhotoId = PhotoId;
+	}
+	public String getPhotoDesc() {
+		return PhotoDesc;
+	}
+	public void setPhotoDesc(String PhotoDesc) {
+		this.PhotoDesc = PhotoDesc;
+	}
+	public Date getPhotoDate() {
+		return PhotoDate;
+	}
+	public void setPhotoDate(Date PhotoDate) {
+		this.PhotoDate = PhotoDate;
+	}
+	public String getPhotoName() {
+		return PhotoName;
+	}
+	public void setPhotoName(String PhotoName) {
+		this.PhotoName = PhotoName;
+	}
+    
+	
+}

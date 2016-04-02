@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+#P_main{
+	width:960px;
+	margin:10px auto;}
+table{
+	margin:0px auto;
+	height:500px;
+	width:700px;
+	border:1px #ccc solid;}
+td{
+	border:1px #ccc solid;}

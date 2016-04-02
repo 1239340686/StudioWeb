@@ -1,0 +1,39 @@
+package com.bjwz.model;
+
+public class Message {
+	private int MessageId;
+	private String MessageDate;
+	private String MessageTitle;
+	private String StuName;
+	private String MessageContent;
+	public int getMessageId() {
+		return MessageId;
+	}
+	public void setMessageId(int messageId) {
+		MessageId = messageId;
+	}
+	public String getMessageDate() {
+		return MessageDate;
+	}
+	public void setMessageDate(String messageDate) {
+		MessageDate = messageDate;
+	}
+	public String getMessageTitle() {
+		return MessageTitle;
+	}
+	public void setMessageTitle(String messageTitle) {
+		MessageTitle = messageTitle;
+	}
+	public String getStuName() {
+		return StuName;
+	}
+	public void setStuName(String stuName) {
+		StuName = stuName;
+	}
+	public String getMessageContent() {
+		return MessageContent;
+	}
+	public void setMessageContent(String messageContent) {
+		MessageContent = messageContent;
+	}
+}

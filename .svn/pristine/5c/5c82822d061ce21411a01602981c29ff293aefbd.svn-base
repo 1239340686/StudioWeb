@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>增加个人信息</title>
+<style>
+.text{
+	width:200px;	
+	height:22px;
+	}
+label{
+	float:left;
+	width:80px;
+	text-align:right;}
+#M_form
+{
+	margin:0 auto;
+	height:900px;
+	width:600px;}
+</style>
+</head>
+
+<body>
+<div id="M_form">
+<form>
+	<label>姓名：</label><input type="text" value="" name="M_name" class="M_text" ><br> <br> <br> 
+    <label>性别：</label>	男<input type="radio" name="M_sex" value="" class="M_radio"> 女<input type="radio"  class="M_radio" name="M_sex" value=""><br> <br> <br>
+    <label>年龄：</label><input type="text" value="" name="M_age" class="M_text" ><br> <br> <br>
+   <label> 学校住址：</label><input type="text" value="" name="M_schoolAddress" class="M_text" ><br> <br> <br>
+    <label>电话号码：</label><input type="text" value="" name="M_number" class="M_text" ><br> <br> <br>
+    <label>家庭住址：</label><input type="text" value="" name="M_homeAddress" class="M_text" ><br> <br> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="提交" name="M_submit" class="M_button" > &nbsp;&nbsp;&nbsp; 
+    <input type="reset" value="重置" name"M_reset" class="M_button">
+</form>
+</div>
+</body>
+</html>

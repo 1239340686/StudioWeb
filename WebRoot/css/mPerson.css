@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+td{
+	border:1px solid #999;
+	}
+table{
+	border-collapse:collapse;
+	height:400px;
+	width:700px;
+	margin:30px auto;
+	text-align:center;}
+
+table a{
+	font-size:13px;
+	color:#F33;
+	text-decoration:none;
+	}

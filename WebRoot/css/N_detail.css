@@ -1,0 +1,23 @@
+/* CSS Document */
+body{
+	width:962px;
+	height:1470px;
+	margin:0 auto;
+	padding:0 auto;
+    font-family:"Microsoft YaHei UI";
+}
+
+a{ 
+ 	text-decoration:none;
+ }
+ 
+#Ncontainer{
+	width:750px;
+	height:900px;
+	margin:0 auto;
+	padding:0 auto;
+	margin-top:15px;
+	margin-bottom:15px;
+	background-color:#DADADA;
+}
+

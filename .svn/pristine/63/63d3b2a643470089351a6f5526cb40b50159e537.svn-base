@@ -1,0 +1,93 @@
+package com.bjwz.model;
+
+import java.util.Date;
+
+/**
+ * 学生信息的model层
+ * 
+ * @author Administrator
+ */
+public class UserInfo {
+
+	private int StuId;
+	private String StuName;
+	private String StuSex;
+	private int StuAge;
+	private String StuAddress;
+	private String StuPhone;
+	private String StuHome;
+	private Date StuBirthday;
+	private int StuPassword;
+
+	public int getStuPassword() {
+		return StuPassword;
+	}
+
+	public void setStuPassword(int stuPassword) {
+		StuPassword = stuPassword;
+	}
+
+	public int getStuId() {
+		return StuId;
+	}
+
+	public void setStuId(int stuId) {
+		StuId = stuId;
+	}
+
+	public String getStuName() {
+		return StuName;
+	}
+
+	public void setStuName(String stuName) {
+		StuName = stuName;
+	}
+
+	public String getStuSex() {
+		return StuSex;
+	}
+
+	public void setStuSex(String stuSex) {
+		StuSex = stuSex;
+	}
+
+	public int getStuAge() {
+		return StuAge;
+	}
+
+	public void setStuAge(int stuAge) {
+		StuAge = stuAge;
+	}
+
+	public String getStuAddress() {
+		return StuAddress;
+	}
+
+	public void setStuAddress(String stuAddress) {
+		StuAddress = stuAddress;
+	}
+
+	public String getStuPhone() {
+		return StuPhone;
+	}
+
+	public void setStuPhone(String stuPhone) {
+		StuPhone = stuPhone;
+	}
+
+	public String getStuHome() {
+		return StuHome;
+	}
+
+	public void setStuHome(String stuHome) {
+		StuHome = stuHome;
+	}
+
+	public Date getStuBirthday() {
+		return StuBirthday;
+	}
+
+	public void setStuBirthday(Date stuBirthday) {
+		StuBirthday = stuBirthday;
+	}
+}

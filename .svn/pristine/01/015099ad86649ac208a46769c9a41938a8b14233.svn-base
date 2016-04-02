@@ -1,0 +1,79 @@
+package com.bjwz.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import com.bjwz.model.Message;
+import com.bjwz.model.UserInfo;
+import com.bjwz.util.DB;
+
+public class MessageDao {
+	public void insertMessage(Message m) {
+		Connection con = DB.getConn();
+		String sql = "insert into message values (?, ?, ?, ?, ?,)";
+		PreparedStatement pstmt = DB.prepare(con, sql);
+		try {
+			pstmt.setInt(1,m.getMessageId()); 
+			pstmt.setString(2,m.getMessageAuthor());
+			pstmt.setDate(3, new java.sql.Date(m.getMessageDate().getTime()));
+			pstmt.setString(4,m.getMessageTitle());
+			pstmt.setString(5, m.getMessageContent());
+			
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally{
+			DB.close(pstmt);
+			DB.close(con);
+		}
+	}
+	
+	public boolean deleteUserinfo(int messageId) {
+		Connection con = DB.getConn();
+		String sql = "delete from message where id= "+messageId+"";
+		PreparedStatement pstmt = DB.prepare(con, sql);
+		boolean b = false;
+		
+			try {
+				pstmt.executeUpdate();
+				b = true;
+			} catch (SQLException e) {
+				e.printStackTrace();
+			
+		} finally {
+			DB.close(pstmt);
+			DB.close(con);
+	    } 
+		return b;
+	}
+	public ArrayList<Message> getMessage() {
+		ArrayList<Message> message = new ArrayList<Message>();
+		Connection con = DB.getConn();
+		String sql = "select * from message";
+		Statement stmt = DB.getStatement(con);
+		ResultSet rs = DB.getResultSet(stmt, sql);
+		try {
+			while (rs.next()) {
+				Message m = new Message();
+				m.setMessageId(rs.getInt("MessageId"));
+				m.setMessageAuthor(rs.getString("MessageAuthor"));
+				m.setMessageDate(rs.getDate("MessageDate"));
+				m.setMessageTitle(rs.getString("MessageTitle"));
+				m.setMessageContent(rs.getString("MessageContent"));
+				message.add(m);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DB.close(rs);
+			DB.close(stmt);
+			DB.close(con);
+		}
+		return message;
+	}
+}

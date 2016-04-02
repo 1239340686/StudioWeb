@@ -1,0 +1,111 @@
+package com.bjwz.dao;
+
+/*
+*UserInfoµÄdao²ã
+*/
+
+import com.bjwz.util.DB;
+import com.bjwz.model.UserInfo;
+import com.bjwz.controller.UserInfoCheckServlet;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserInfoDao {
+
+	public void insertUserInfo(UserInfo ui) {
+		Connection con = DB.getConn();
+		String sql = "insert into userinfo values (?, ?, ?, ?, ?, ?,?,?)";
+		PreparedStatement pstmt = DB.prepare(con, sql);
+		try {
+			pstmt.setInt(1,ui.getStuId()); 
+			pstmt.setString(2,ui.getStuName());
+			pstmt.setString(3,ui.getStuSex());
+			pstmt.setInt(4, ui.getStuAge());
+			pstmt.setString(5, ui.getStuAddress());
+			pstmt.setString(6,ui.getStuPhone());
+			pstmt.setString(7, ui.getStuHome());
+			pstmt.setDate(8,(Date) ui.getStuBirthday());
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally{
+			DB.close(pstmt);
+			DB.close(con);
+		}
+	}
+	
+	public boolean deleteUserinfo(int id) {
+		Connection con = DB.getConn();
+		String sql = "delete from userinfo where id= " + id;
+		Statement stmt = DB.getStatement(con);
+		boolean b = false;
+		try{
+			DB.executeUpdate(stmt, sql);
+			b = true;
+		} finally {
+			DB.close(stmt);
+			DB.close(con);
+	    } 
+		return b;
+	}
+	
+	public void update(int Id,UserInfo user) {
+		Connection conn = DB.getConn();
+		String sql = "update user set StuName = ?,StuSex = ?, StuAge = ?,StuAddress = ?,StuPhone = ?,StuHome = ?,StuBirthday = ?where id ="+ Id;
+		PreparedStatement pstmt = DB.prepare(conn, sql);
+		try {
+			pstmt.setString(1, user.getStuName());
+			pstmt.setString(2, user.getStuSex());
+			pstmt.setInt(3, user.getStuAge());
+			pstmt.setString(4, user.getStuAddress());
+			pstmt.setString(5, user.getStuPhone());
+			pstmt.setString(6, user.getStuHome());
+			pstmt.setDate(7, (Date)user.getStuBirthday());
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DB.close(pstmt);
+			DB.close(conn);
+		}
+	}
+
+	public ArrayList<UserInfo> getUserInfo() {
+		ArrayList<UserInfo> user = new ArrayList<UserInfo>();
+		Connection con = DB.getConn();
+		String sql = "select * from userinfo";
+		Statement stmt = DB.getStatement(con);
+		ResultSet rs = DB.getResultSet(stmt, sql);
+		try {
+			while (rs.next()) {
+				UserInfo u = new UserInfo();
+				u.setStuId(rs.getInt("StuId"));
+				u.setStuName(rs.getString("StuName"));
+				u.setStuSex(rs.getString("StuSex"));
+				u.setStuAge(rs.getInt("StuAge"));
+				u.setStuAddress(rs.getString("StuAddress"));
+				u.setStuPhone(rs.getString("StuPhone"));
+				u.setStuHome(rs.getString("StuHome"));
+				u.setStuBirthday(rs.getDate("StuBirthday"));
+				user.add(u);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DB.close(rs);
+			DB.close(stmt);
+			DB.close(con);
+		}
+		return user;
+	}
+	
+	
+}

@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+a{text-decoration:none;}
+ul{margin:0;
+	padding:0;}
+ul li{list-style:none;}
+.H_more a{
+	color:#03F;
+	font-size:12px;}
+.H_more a:hover{
+	color:#F36;}
+img a{border:none;}
+h4{ margin-top:0;
+	height:30px;
+	width:100%;
+	background:#999999;
+	color:#FFF;
+	line-height:30px;
+	text-align:center;
+	}
+
+#H_main{
+	margin:10px auto;
+	height:760px;
+	width:960px;
+}
+#H_leftmain{
+	width:200px;
+	float:left;
+     }
+#H_login{
+	height:239px;
+	width:195px;
+	border:1px solid #ccc;}
+#H_login p{font-size:13px;text-align:center;}
+#H_login h5{
+	margin:0;
+	position:relative;
+	height:20px;
+	width:195px;
+	color:#666;
+	position:relative;
+	} 
+#H_login h5 span{
+	display:block;
+	float:left;
+	height:10px;
+	width:76px;
+	padding:10px;
+	border:1px #CCC solid;
+	cursor:pointer;
+	}
+#H_userLogin{
+	position:absolute;
+	left:0;}
+#H_managerLogin{
+	position:absolute;
+	right:0;}
+#H_userF{
+	margin-top:20px;
+  position:absolute;	
+	}
+#H_managerF{
+		margin-top:20px;
+  position:absolute;
+  top:310px;
+  display:none;	
+	}
+.H_loginInput{
+	margin:15px 5px 0 5px;
+	height:20px;
+	width:180px;}
+.H_loginIcon{
+	background:#ccccff;
+	float:left;
+	color:white;
+	display:block;
+	height:20px;
+	width:40px;
+	font-size:12px;
+	text-align:center;
+	line-height:20px;
+	}
+.H_loginInput input{
+	float:right;
+	width:120px;}
+#H_introduce{
+	text-align:center;
+	margin-top:20px;
+	float:left;
+	position:relative;
+	height:390px;
+	width:195px;
+	border:1px solid #CCC;
+	margin-bottom:10px;}
+#H_introduce p{
+	line-height:20px;
+	color:#333;
+	width:175px;
+	font-size:13px;
+
+}
+
+#H_centermain{
+	float:right;
+	height:900px;
+	width:750px;
+	}
+#H_searchWrap{
+	height:20px;
+	width:720px;}
+#H_newsHL {
+	float:left;
+	width:130px;
+	position:relative;}
+#H_newsHL span{
+	color:red;
+	font-size:12px;
+	position:absolute;
+	right:0;
+	top:0;
+	}
+#H_search{
+	float:right;
+	height:30px;
+	width:190px;
+	}
+#H_search input{
+	float:left;
+	width:150px;
+	height:20px;
+	}
+#H_searchIcon{
+	float:right;
+	height:30px;
+	width:30px;
+	background:url(../image/search.png) no-repeat -15px -15px;
+	cursor:pointer;
+	}
+#H_centerTop{
+	margin-top:20px;
+	height:210px;
+	}
+
+#H_news{
+	position:relative;
+	height:190px;
+	width:720px;
+	border:1px solid #CCC;
+	margin-bottom:10px;}
+.H_newsUl{
+  margin:0 auto auto 30px;;
+  padding:0;
+  width:260px;
+	}
+.H_newsUl li{
+	line-height:35px;
+	list-style:square;
+     color:#06F;
+	 width:600px;}	
+.H_newsUl a{
+	font-size:12px;
+	color:#333;
+}
+.H_newsUl a:hover{
+	font-size:12px;
+	color:#66C;
+}
+.H_newsUl li span{
+	color:#333;
+	font-size:12px;
+	float:right;}
+#H_nM{
+	position:absolute;
+	bottom:5px;
+	right:10px;
+	} 
+
+#H_centerCenter{
+	height:230px;}
+#H_albumWrap{
+	padding:0;
+	margin-left:30px;
+	position:relative;
+	height:175px;
+	width:664px;
+	overflow:hidden;
+	}
+.H_album{
+	padding:0;
+	position:absolute;
+	top:0;
+	height:175px;
+	width:1328px;
+	}
+.H_album li{
+	float:left;
+	width:166px;}
+#H_centerBottom{
+	position:relative;
+	margin-top:20px;
+	width:710px;
+	height:205px;
+	}
+#H_message{
+	position:relative;
+	height:200px;
+	width:700px;
+	overflow:hidden;
+	border:1px solid #CCC;}
+
+#H_mleft{
+	float:left;
+	width:100px;}
+#H_mright{
+	float:right;
+	width:600px;
+	
+	}
+#H_message .H_more{
+	position:absolute;
+	width:50px;
+	right:10px;
+	top:0;}
+#H_mright ul{
+	position:absolute;
+	top:0;
+	width:600px;
+	font-size:13px;
+	}
+#H_mright ul li{
+
+	border-bottom:1px #F96 solid;}
+#H_centerBottom  a{
+	position:absolute;
+	right:0;
+	top:0;}
+	
+	

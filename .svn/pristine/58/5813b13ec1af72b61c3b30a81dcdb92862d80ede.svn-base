@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>运动会</title>
+<link rel="stylesheet" href="../css/AAcss.css" />
+<script src="../js/AAjs.js"></script>
+</head>
+
+<body>
+ 	<div id="AA_Header"></div><!--头部-->
+    <!--兴趣小组内容-->
+    <div id="AA_Contenter">
+      	<div id="AA_ContenterLeft">
+        	<div class="AA_ContenterLeftTop">
+            	运动会
+            </div>
+            <div class="AA_ContenterLeftCenter">
+            <br>&nbsp;&nbsp;运动场上，留下的是我们的飒爽风姿
+            </div>
+        </div>
+        <div id="AA_ContenterRight">
+        	<div class="AA_ContenterRightTop">
+            	你们咋这帅呢
+            </div>
+            <div class="AA_ContenterRightCenter">
+            	<div id="AA_Location1"><img src="../image/A_yundonghui1.jpg" id="AApic1"title="快乐happy"></div>
+                <div id="AA_Location2"><img src="../image/A_yundonghui2.jpg" id="AApic2"title="111" /></div>
+                <div id="AA_Location3"><img src="../image/A_album2.jpg" id="AApic3"title="222" /></div>
+                <div id="AA_Location4"><img src="../image/A_yundonghui3.jpg" id="AApic4" title="3333" /></div>
+            </div>
+        </div>	
+    </div>
+    <div id="foot"></div><!--脚部--></h1>
+</body>
+</html>

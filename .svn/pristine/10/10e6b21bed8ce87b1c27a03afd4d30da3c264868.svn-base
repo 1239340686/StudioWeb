@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+a{text-decoration:none;}
+ul li{list-style:none;}
+#M_main{
+	background:;
+	margin:20px auto;
+	width:960px;
+	border:1px #FC9 solid;}
+h3{
+	height:30px;
+	width:80px;
+	margin-left:40px;
+	color:#F93;}
+#M_main ul{
+	width:900px;
+	}
+#M_main ul li{
+	width:800px;
+	height:180px;
+	border-top:1px #FF9 solid;
+	border-bottom:1px #FF9 solid;
+	list-style:none;
+	position:relative;
+	font-size:14px;
+	
+	}
+.M_name{
+	position:absolute;
+	top:10px;
+	left:40px;}
+.M_num{
+	position:absolute;
+	top:10px;
+	left:100px;}
+.M_time{
+	position:absolute;
+	top:10px;
+	left:400px;}
+#M_main ul li p{
+	position:absolute;
+	bottom:20px;
+	left:40px;}
+textarea{
+	height:250px;
+	width:500px;
+	margin-left:100px;}
+input{
+	margin-left:100px;}
+	
+.mDelete{
+	position:absolute;
+	right:10px;
+	top:10px;
+	color:#F90;
+	cursor:pointer;}

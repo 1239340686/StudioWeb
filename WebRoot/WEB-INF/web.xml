@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  
+  <filter>
+  	<filter-name>LoginFilter</filter-name>
+  	<filter-class>com.bjwz.controller.LoginFilter</filter-class>
+  </filter>
+ 
+  
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserInfoCheckServlet</servlet-name>
+    <servlet-class>com.bjwz.controller.UserInfoCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserInfoDeleteServlet</servlet-name>
+    <servlet-class>com.bjwz.controller.UserInfoDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserInfoUpdateServlet</servlet-name>
+    <servlet-class>com.bjwz.controller.UserInfoUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserInfoInsertServlet</servlet-name>
+    <servlet-class>com.bjwz.controller.UserInfoInsertServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MPerson</servlet-name>
+    <servlet-class>com.bjwz.controller.MPerson</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserInfoSearchById</servlet-name>
+    <servlet-class>com.bjwz.controller.UserInfoSearchById</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MessageCheckServlet</servlet-name>
+    <servlet-class>com.bjwz.controller.MessageCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MessageInsertServlet</servlet-name>
+    <servlet-class>com.bjwz.controller.MessageInsertServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MessageDeleteServlet</servlet-name>
+    <servlet-class>com.bjwz.controller.MessageDeleteServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>mMessage</servlet-name>
+    <servlet-class>com.bjwz.controller.mMessage</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AlbumCheckServlet</servlet-name>
+    <servlet-class>com.bjwz.controller.AlbumCheckServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NDelete</servlet-name>
+    <servlet-class>com.bjwz.controller.NDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NDoAdd</servlet-name>
+    <servlet-class>com.bjwz.controller.NDoAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NDoUpdate</servlet-name>
+    <servlet-class>com.bjwz.controller.NDoUpdate</servlet-class>
+  </servlet>
+
+  
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserInfoCheckServlet</servlet-name>
+    <url-pattern>/UserInfoCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserInfoDeleteServlet</servlet-name>
+    <url-pattern>/UserInfoDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserInfoUpdateServlet</servlet-name>
+    <url-pattern>/UserInfoUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserInfoInsertServlet</servlet-name>
+    <url-pattern>/UserInfoInsertServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MPerson</servlet-name>
+    <url-pattern>/MPerson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserInfoSearchById</servlet-name>
+    <url-pattern>/UserInfoSearchById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageCheckServlet</servlet-name>
+    <url-pattern>/MessageCheckServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageInsertServlet</servlet-name>
+    <url-pattern>/MessageInsertServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>MessageDeleteServlet</servlet-name>
+    <url-pattern>/MessageDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>mMessage</servlet-name>
+    <url-pattern>/mMessage</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AlbumCheckServlet</servlet-name>
+    <url-pattern>/AlbumCheckServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>NDelete</servlet-name>
+    <url-pattern>/NDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NDoAdd</servlet-name>
+    <url-pattern>/NDoAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NDoUpdate</servlet-name>
+    <url-pattern>/NDoUpdate</url-pattern>
+  </servlet-mapping>
+
+  
+
+  <welcome-file-list>
+  	<welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
+
+
+
+
+
+

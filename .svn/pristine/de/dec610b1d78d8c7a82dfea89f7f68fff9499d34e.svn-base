@@ -1,0 +1,34 @@
+package com.bjwz.model;
+public class News {
+	private int newsId;
+	private String newsTitle;
+	private String newsCreator;
+	private String newsCreateTime;
+	
+	public int getNewsId() {
+		return newsId;
+	}
+	public void setNewsId(int newsId) {
+		this.newsId = newsId;
+	}
+	public String getNewsTitle() {
+		return newsTitle;
+	}
+	public void setNewsTitle(String newsTitle) {
+		this.newsTitle = newsTitle;
+	}
+	public String getNewsCreator() {
+		return newsCreator;
+	}
+	public void setNewsCreator(String newsCreator) {
+		this.newsCreator = newsCreator;
+	}
+	public String getNewsCreateTime() {
+		return newsCreateTime;
+	}
+	public void setNewsCreateTime(String newsCreateTime) {
+		this.newsCreateTime = newsCreateTime;
+	}
+	
+	
+}

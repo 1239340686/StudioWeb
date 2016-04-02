@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>留言板管理</title>
+
+<link href="../Css/M_demo.css" type="text/css"  rel="stylesheet"/>
+<script src="../Js/H_tool.js" type="text/javascript" ></script>
+<script src="../Js/H_deleteM.js" type="text/javascript" ></script>
+</head>
+
+
+<body>
+
+<div id="M_main">
+	<h3>留言板</h3>
+	<ul>
+    	<li>
+        	<span class="M_name">who</span>
+            <span class="M_num">第几条</span>
+            <span class="M_time">when</span>
+            <span class="mDelete" name="mDelete">删除</span>
+             <p>那片笑声让我想起我的那些花儿</p> 
+        </li>
+        <li>
+        	<span class="M_name">who</span>
+            <span class="M_num">第几条</span>
+            <span class="M_time">when</span>
+            <span class="mDelete" name="mDelete">删除</span>
+         	<p>在我生命每个角落静静为我开着</p>
+        </li>
+         <li>
+        	<span class="M_name">who</span>
+            <span class="M_num">第几条</span>
+            <span class="M_time">when</span>
+            <span class="mDelete" name="mDelete">删除</span>
+         	<p>在我生命每个角落静静为我开着</p>
+        </li>
+         <li>
+        	<span class="M_name">who</span>
+            <span class="M_num">第几条</span>
+            <span class="M_time">when</span>
+            <span class="mDelete" name="mDelete">删除</span>
+         	<p>在我生命每个角落静静为我开着</p>
+        </li>
+         <li>
+        	<span class="M_name">who</span>
+            <span class="M_num">第几条</span>
+            <span class="M_time">when</span>
+            <span class="mDelete" name="mDelete">删除</span>
+         	<p>在我生命每个角落静静为我开着</p>
+        </li>
+    </ul>
+    </div>
+</body>
+</html>
